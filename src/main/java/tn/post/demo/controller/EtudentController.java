@@ -19,8 +19,6 @@ public class EtudentController {
     private final IEtudentService service;
     private Map<String, String> response = new HashMap<>();
 
-
-
     @GetMapping("")
     public ResponseEntity<?> getAll(){
         return ResponseEntity.ok(service.getAllEtudent());
